@@ -17,10 +17,10 @@ function installBinary {
 }
 
 # Install from apt
-sudo apt install neovim
+sudo apt install neovim evince
 
 # Install from snap
-sudo snap install jq evince
+sudo snap install jq
 
 # Install custom binaries
 curl -L -o stern https://github.com/wercker/stern/releases/download/1.10.0/stern_linux_amd64
