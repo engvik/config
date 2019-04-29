@@ -5,3 +5,10 @@ sudo apt install neovim
 
 # Install autoload
 ./vim-autoload.sh
+
+# Copy config
+mkdir -p ~/.config/nvim
+cp dotfiles/init.vim ~/.config/nvim/init.vim
+
+# Install plugins
+vim +'PlugInstall --sync' +qa
