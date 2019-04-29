@@ -11,4 +11,4 @@ mkdir -p ~/.config/nvim
 cp dotfiles/init.vim ~/.config/nvim/init.vim
 
 # Install plugins
-vim +'PlugInstall --sync' +qa
+nvim +PlugInstall +UpdateRemotePlugins +qa
