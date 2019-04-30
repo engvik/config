@@ -2,6 +2,9 @@
 " Set true colors
 set termguicolors
 
+" Set line numbers
+set number
+
 " Plugins
 
 call plug#begin('~/.local/share/nvim/plugged')
