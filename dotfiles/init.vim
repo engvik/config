@@ -13,10 +13,14 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-
 Plug 'junegunn/fzf'
-
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'jelera/vim-javascript-syntax'
+Plug 'hdima/python-syntax'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'ternjs/tern_for_vim'
+Plug 'mxw/vim-jsx'
 
 call plug#end()
 
@@ -28,3 +32,6 @@ let g:LanguageClient_serverCommands = {
        \ }
 " Run gofmt and goimports on save
 autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
+
+" Python highlight
+let python_highlight_all = 1
