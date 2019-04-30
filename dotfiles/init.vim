@@ -3,7 +3,11 @@
 set termguicolors
 
 " Set line numbers
-set number
+set number relativenumber
+set nu rnu
+
+" Set cursorline
+set cursorline
 
 " Plugins
 
