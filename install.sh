@@ -17,10 +17,10 @@ function installBinary {
 }
 
 # Install from apt
-sudo apt install neovim evince unzip ntp fzf
+./install-apt.sh
 
 # Install from snap
-sudo snap install jq
+./install-snap.sh
 
 # Install custom binaries
 
