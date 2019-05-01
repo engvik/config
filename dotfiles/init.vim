@@ -23,15 +23,18 @@ Plug 'tpope/vim-fugitive'
 Plug 'rking/ag.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
-
 
 " Use true colors
 set termguicolors
 
 " Syntax highlighting
 syntax on
+
+" Use colorscheme onedark
+colorscheme onedark
 
 " Use hybrid line numbers
 set number relativenumber
@@ -48,6 +51,13 @@ set showmatch
 
 " Highlight all search results
 set hlsearch
+
+" Highlight when typing search
+set incsearch
+
+" Expands TABs into whitespaces
+set expandtab
+set shiftwidth=4
 
 " Be able to undo a lot
 set undolevels=1000
@@ -67,4 +77,44 @@ autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 " Python highlight
 let python_highlight_all = 1
 
+" airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme = "onedark"
+
+" jedi-vim
+let g:jedi#show_call_signatures = 1 
+let g:jedi#popup_select_first = 0
+let g:jedi#completions_enabled = 0
+autocmd FileType python setlocal completeopt-=preview
+
+" ag
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore .git --ignore build-out --ignore build-opt --ignore build-dbg -g ""'
+endif
+
+" Ctrl+P opens a fuzzy filesearch window (powered by Fzf)
+nnoremap <C-p> :Files<CR>
+
+" Switch to last active tab
+let g:lasttab = 1
+
+" tt to switch between tabs
+nmap tt :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
+
+" Don't expland tabs for Go
+autocmd BufRead,BufNewFile *.go setlocal noexpandtab
+
+" cc to hide search highlights
+nnoremap cc :let @/ = ""<cr>
+
+" \e to open a NerdTree at in the directory of the currently viewed file
+nnoremap <Leader>e :Ex<CR>
+
+" sudo write
+cmap w!! w !sudo tee % >/dev/null
 
