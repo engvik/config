@@ -6,7 +6,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
-    editor = vim
+        editor = vim
 
 [alias]
 	c = commit -am
