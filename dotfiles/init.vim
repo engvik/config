@@ -1,13 +1,28 @@
 
-" Set true colors
+" Use true colors
 set termguicolors
 
-" Set line numbers
+" Use hybrid line numbers
 set number relativenumber
 set nu rnu
 
-" Set cursorline
+" Display cursor line
 set cursorline
+
+" Automatically indent
+set autoindent
+
+" Highlight matching bracket
+set showmatch
+
+" Highlight all search results
+set hlsearch
+
+" Be able to undo a lot
+set undolevels=1000
+
+" Backspace behavior
+set backspace=indent,eol,start
 
 " Plugins
 
