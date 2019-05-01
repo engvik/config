@@ -17,7 +17,7 @@ function installBinary {
 }
 
 # Install from apt
-sudo apt install neovim evince unzip ntp
+sudo apt install neovim evince unzip ntp fzf
 
 # Install from snap
 sudo snap install jq
