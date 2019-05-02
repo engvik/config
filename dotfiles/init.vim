@@ -106,9 +106,6 @@ let g:lasttab = 1
 nmap tt :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
-" Don't expland tabs for Go
-autocmd BufRead,BufNewFile *.go setlocal noexpandtab
-
 " cc to hide search highlights
 nnoremap cc :let @/ = ""<cr>
 
@@ -117,6 +114,19 @@ nnoremap <Leader>e :Ex<CR>
 
 " sudo write
 cmap w!! w !sudo tee % >/dev/null
+
+" remap splitting
+nmap <C-s> <C-w>s
+nmap <C-v> <C-w>v
+nmap <C-n> <C-w>n
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" Don't expland tabs for Go
+autocmd BufRead,BufNewFile *.go setlocal noexpandtab
 
 " Go syntax highlighting
 let g:go_highlight_functions = 1
