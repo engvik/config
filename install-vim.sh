@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Get neovim
-sudo apt install neovim
+
+if ! [ -x "$(command -v nvim)" ]; then
+    sudo apt install neovim
+fi
 
 # Install vim-plug
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
