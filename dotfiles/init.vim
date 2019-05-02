@@ -120,10 +120,15 @@ nmap <C-s> <C-w>s
 nmap <C-v> <C-w>v
 nmap <C-n> <C-w>n
 
+" remap navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" remap move lines
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
 
 " Don't expland tabs for Go
 autocmd BufRead,BufNewFile *.go setlocal noexpandtab
