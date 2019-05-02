@@ -3,8 +3,9 @@
 # Get neovim
 sudo apt install neovim
 
-# Install autoload
-./vim-autoload.sh
+# Install vim-plug
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Copy config
 mkdir -p ~/.config/nvim
