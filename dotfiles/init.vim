@@ -24,6 +24,7 @@ Plug 'rking/ag.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
@@ -115,11 +116,6 @@ nnoremap <Leader>e :Ex<CR>
 " sudo write
 cmap w!! w !sudo tee % >/dev/null
 
-" remap splitting
-nmap <C-s> <C-w>s
-nmap <C-v> <C-w>v
-nmap <C-n> <C-w>n
-
 " remap navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -129,6 +125,10 @@ nnoremap <C-l> <C-w>l
 " remap move lines
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Don't expland tabs for Go
 autocmd BufRead,BufNewFile *.go setlocal noexpandtab
