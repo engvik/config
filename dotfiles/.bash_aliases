@@ -11,3 +11,6 @@ alias ......="cd ../../../../.."
 
 # Weather
 alias weather="curl wttr.in/oslo"
+
+# clea
+alias c="clear"
