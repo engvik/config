@@ -68,15 +68,9 @@ set backspace=indent,eol,start
 
 " LanguageClient config
 let g:LanguageClient_serverCommands = {
-       \ 'go': ['gopls'],
        \ 'python': ['/usr/local/bin/pyls'],
        \ 'javascript.jsx': ['js-langserver', '--stdio'],
        \ }
-" Run gofmt and goimports on save
-autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
-
-" Python highlight
-let python_highlight_all = 1
 
 " airline
 let g:airline_powerline_fonts = 1
@@ -140,3 +134,10 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_format_strings = 1
+
+" Use go-pls
+let g:go_def_mode='gopls'
+
+" Python highlight
+let python_highlight_all = 1
+
