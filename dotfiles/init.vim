@@ -25,6 +25,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
@@ -65,6 +66,9 @@ set undolevels=1000
 
 " Backspace behavior
 set backspace=indent,eol,start
+
+" Run deoplete on startup
+let g:deoplete#enable_at_startup = 1
 
 " LanguageClient config
 let g:LanguageClient_serverCommands = {
@@ -137,6 +141,9 @@ let g:go_highlight_format_strings = 1
 
 " Use go-pls
 let g:go_def_mode='gopls'
+
+" Auto code completion for Go
+call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })       
 
 " Python highlight
 let python_highlight_all = 1
