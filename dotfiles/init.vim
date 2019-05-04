@@ -67,6 +67,9 @@ set undolevels=1000
 " Backspace behavior
 set backspace=indent,eol,start
 
+" Set lower update time
+set updatetime=100
+
 " Run deoplete on startup
 let g:deoplete#enable_at_startup = 1
 
@@ -138,9 +141,13 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_format_strings = 1
+let g:go_auto_sameids = 1
 
 " Use go-pls
 let g:go_def_mode='gopls'
+
+" Enable automatic type info
+let g:go_auto_type_info = 1
 
 " Auto code completion for Go
 call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })       
