@@ -1,14 +1,27 @@
 # config
 Dotfiles, install scripts etc.
 
-# install.sh
+## install.sh
 
 Installs everything. Useful in a brand new environment.
 
-# install-vim.sh
+## install-apt.sh
 
-Installs everything vim-related
+Installs everything what we want from apt.
 
-# install-dotfiles.sh
+## install-snap.sh
 
-Copies dotfiles only
+Installs everything what we want from snap.
+
+## install-binaries.sh
+
+Installs all the custom binaries we want.
+
+## install-vim.sh
+
+Installs everything vim-related.
+
+## install-dotfiles.sh
+
+Copies dotfiles only.
+
