@@ -35,12 +35,19 @@ set termguicolors
 " Syntax highlighting
 syntax on
 
+" Enable filetype plugins
+filetype plugin on
+filetype indent on
+
 " Use colorscheme onedark
 colorscheme onedark
 
 " Use hybrid line numbers
 set number relativenumber
 set nu rnu
+
+" Automatically read files when they are saved from the outside.
+set autoread
 
 " Display cursor line
 set cursorline
@@ -70,6 +77,26 @@ set backspace=indent,eol,start
 " Set lower update time
 set updatetime=100
 
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases 
+set smartcase
+
+" No sounds
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
+" Set utf-8
+set encoding=utf8
+
+" Disable backups
+set nobackup
+set nowb
+set noswapfile
+
 " Run deoplete on startup
 let g:deoplete#enable_at_startup = 1
 
@@ -92,7 +119,7 @@ autocmd FileType python setlocal completeopt-=preview
 " ag
 if executable('ag')
   " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
+  "set grepprg=ag\ --nogroup\ --nocolor
 
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore .git --ignore build-out --ignore build-opt --ignore build-dbg -g ""'
