@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo snap install jq
+sudo snap install jq slack
 
