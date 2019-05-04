@@ -9,3 +9,9 @@
 # Install binaries
 ./install-binaries.sh
 
+# Install vim
+./install-vim.sh
+
+# Install dotfiles
+./install-dotfiles.sh
+
