@@ -21,6 +21,10 @@ Installs all the custom binaries we want.
 
 Installs everything vim-related.
 
+## install-vscode.sh
+
+Installs everything vscode-related.
+
 ## install-dotfiles.sh
 
 Copies dotfiles only.

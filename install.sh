@@ -12,6 +12,9 @@
 # Install vim
 ./install-vim.sh
 
+# Install vscode
+./install-vscode.sh
+
 # Install dotfiles
 ./install-dotfiles.sh
 
