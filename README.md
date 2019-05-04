@@ -13,7 +13,7 @@ Installs everything what we want from apt.
 
 Installs everything what we want from snap.
 
-## install-binaries.sh
+## install-binaries.sh
 
 Installs all the custom binaries we want.
 
