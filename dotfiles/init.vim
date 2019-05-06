@@ -97,6 +97,9 @@ set nobackup
 set nowb
 set noswapfile
 
+" Be able to use the mouse
+set mouse=a
+
 " Run deoplete on startup
 let g:deoplete#enable_at_startup = 1
 
