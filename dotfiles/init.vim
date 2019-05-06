@@ -53,6 +53,9 @@ set autoread
 " Display cursor line
 set cursorline
 
+" Scroll before reaching top/bottom
+set scrolloff=10
+
 " Automatically indent
 set autoindent
 
