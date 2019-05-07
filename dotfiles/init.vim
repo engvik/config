@@ -27,6 +27,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'terryma/vim-multiple-cursors'
+Plug 'Townk/vim-autoclose'
 
 call plug#end()
 
