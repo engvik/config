@@ -23,6 +23,10 @@ alias weather="curl wttr.in/oslo"
 # Python server
 alias pythonserver='python -m SimpleHTTPServer 8000'
 
+# Apt
+alias supdt='sudo apt update'
+alias supgr='sudo apt upgrade'
+
 # enable color supported aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
