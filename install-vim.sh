@@ -16,3 +16,8 @@ cp dotfiles/init.vim ~/.config/nvim/init.vim
 
 # Install plugins
 nvim +PlugInstall +UpdateRemotePlugins +qa
+
+CUR_PWD=$PWD
+cd ~/.local/share/nvim/plugged/tern_for_vim
+npm install
+cd $CUR_PWD
