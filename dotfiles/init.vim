@@ -177,6 +177,7 @@ let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_format_strings = 1
 let g:go_auto_sameids = 1
+let g:go_highlight_debug = 1
 
 " Use go-pls
 let g:go_def_mode='gopls'
@@ -186,6 +187,19 @@ let g:go_fmt_command = "goimports"
 
 " Enable automatic type info
 let g:go_auto_type_info = 1
+
+" Run async
+let g:go_async_run = 1
+
+" Set list type
+let g:go_list_type = 'locationlist'
+
+" Autodetect gopath
+let g:go_autodetect_gopath = 1
+
+" Show errors
+let g:go_fmt_fail_silently = 0
+let g:go_jump_to_error = 0
 
 " Auto code completion for Go
 call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })       
