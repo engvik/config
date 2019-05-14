@@ -17,6 +17,10 @@ Installs everything what we want from snap.
 
 Installs all the custom binaries we want.
 
+## install-go.sh
+
+Installs with go get.
+
 ## install-vim.sh
 
 Installs everything vim-related.

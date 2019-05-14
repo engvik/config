@@ -9,6 +9,9 @@
 # Install binaries
 ./install-binaries.sh
 
+# Install go
+./install-go.sh
+
 # Install vim
 ./install-vim.sh
 
