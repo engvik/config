@@ -9,6 +9,9 @@
 # Install binaries
 ./install-binaries.sh
 
+# Install deb files
+./install-deb.sh
+
 # Install go
 ./install-go.sh
 

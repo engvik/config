@@ -17,9 +17,13 @@ Installs everything what we want from snap.
 
 Installs all the custom binaries we want.
 
+## install-deb.sh
+
+Installs all the custom deb files we want.
+
 ## install-go.sh
 
-Installs with go get.
+Installs everything from go get.
 
 ## install-vim.sh
 
