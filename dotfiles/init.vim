@@ -28,6 +28,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'terryma/vim-multiple-cursors'
 Plug 'Townk/vim-autoclose'
+Plug 'fgsch/vim-varnish'
 
 call plug#end()
 
