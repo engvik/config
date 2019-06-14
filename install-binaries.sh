@@ -33,5 +33,10 @@ unzip protoc.zip -d protocfiles/
 mv protocfiles/bin/protoc .
 installBinary protoc
 sudo mv protocfiles/include /usr/local
-rm -rf protocfiles/ protoc.zip
+rm -rf protocfiles/ protoc.zip */
+
+# slackcat
+curl -L -o slackcat https://github.com/bcicen/slackcat/releases/download/v1.6/slackcat-1.6-linux-amd64
+installBinary slackcat
+echo "slackcat is not configured, use slackat --configure to set up"
 
