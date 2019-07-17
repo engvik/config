@@ -21,3 +21,5 @@ CUR_PWD=$PWD
 cd ~/.local/share/nvim/plugged/tern_for_vim
 npm install
 cd $CUR_PWD
+
+npm i -g neovim
