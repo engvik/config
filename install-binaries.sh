@@ -23,7 +23,8 @@ checksum stern a0335b298f6a7922c35804bffb32a68508077b2f35aaef44d9eb116f36bc7eda
 installBinary stern
 
 # Go
-curl -L -o golang.tar.gz https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
+curl -L -o golang.tar.gz https://dl.google.com/go/go1.12.9.linux-amd64.tar.gz
+checksum golang.tar.gz ac2a6efcc1f5ec8bdc0db0a988bb1d301d64b6d61b7e8d9e42f662fbb75a2b9b
 sudo tar -C /usr/local -xzf golang.tar.gz
 rm -rf golang.tar.gz
 
