@@ -167,7 +167,7 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
-" Don't expland tabs for Go
+" Don't expand tabs for Go
 autocmd BufRead,BufNewFile *.go setlocal noexpandtab
 
 " Go syntax highlighting
@@ -201,9 +201,6 @@ let g:go_autodetect_gopath = 1
 " Show errors
 let g:go_fmt_fail_silently = 0
 let g:go_jump_to_error = 0
-
-" Auto code completion for Go
-call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })       
 
 " Python highlight
 let python_highlight_all = 1
