@@ -21,6 +21,9 @@ Installs all the custom binaries we want.
 
 Installs all the custom deb files we want.
 
+## install-sh.sh
+Install by downloading shell scripts and running them.
+
 ## install-go.sh
 
 Installs everything from go get.

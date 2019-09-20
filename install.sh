@@ -15,6 +15,9 @@
 # Install go
 ./install-go.sh
 
+# Install by curl + sh
+./install-sh.sh
+
 # Install vim
 ./install-vim.sh
 
