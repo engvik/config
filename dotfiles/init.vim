@@ -29,6 +29,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'terryma/vim-multiple-cursors'
 Plug 'Townk/vim-autoclose'
 Plug 'fgsch/vim-varnish'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
