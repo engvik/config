@@ -169,7 +169,7 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Don't expand tabs for Go
-autocmd BufRead,BufNewFile *.go setlocal noexpandtab
+autocmd BufRead,BufNewFile *.go setlocal tabstop=4
 
 " Go syntax highlighting
 let g:go_highlight_functions = 1
