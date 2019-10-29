@@ -114,7 +114,9 @@ let g:deoplete#enable_at_startup = 1
 let g:LanguageClient_serverCommands = {
        \ 'python': ['/usr/local/bin/pyls'],
        \ 'javascript.jsx': ['js-langserver', '--stdio'],
+       \ 'go': ['gopls']
        \ }
+autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 
 " airline
 let g:airline_powerline_fonts = 1
@@ -183,9 +185,7 @@ let g:go_highlight_debug = 1
 
 " Use go-pls
 let g:go_def_mode='gopls'
-
-" Use goimports for import until gopls makes it work.
-let g:go_fmt_command = "goimports"
+let g:go_info_mode='gopls'
 
 " Enable automatic type info
 let g:go_auto_type_info = 1
