@@ -114,9 +114,7 @@ let g:deoplete#enable_at_startup = 1
 let g:LanguageClient_serverCommands = {
        \ 'python': ['/usr/local/bin/pyls'],
        \ 'javascript.jsx': ['js-langserver', '--stdio'],
-       \ 'go': ['gopls']
        \ }
-autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 
 " airline
 let g:airline_powerline_fonts = 1
@@ -173,6 +171,9 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 " Don't expand tabs for Go
 autocmd BufRead,BufNewFile *.go setlocal tabstop=4
 
+" Use go-pls
+let g:go_def_mode='gopls'
+
 " Go syntax highlighting
 let g:go_highlight_functions = 1
 let g:go_highlight_function_parameters = 1
@@ -183,12 +184,9 @@ let g:go_highlight_format_strings = 1
 let g:go_auto_sameids = 1
 let g:go_highlight_debug = 1
 
-" Use go-pls
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-
 " Enable automatic type info
 let g:go_auto_type_info = 1
+let g:go_info_mode='gopls'
 
 " Run async
 let g:go_async_run = 1
