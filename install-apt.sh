@@ -2,5 +2,5 @@
 
 sudo apt update
 sudo apt upgrade
-sudo apt install neovim evince unzip ntp fzf sshuttle postgresql docker.io
+sudo apt install neovim evince unzip ntp fzf sshuttle postgresql docker.io ddgr
 
