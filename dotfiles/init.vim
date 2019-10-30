@@ -188,6 +188,9 @@ let g:go_highlight_debug = 1
 let g:go_auto_type_info = 1
 let g:go_info_mode='gopls'
 
+" gofmt on save
+let g:go_fmt_command = "goimports"
+
 " Run async
 let g:go_async_run = 1
 
