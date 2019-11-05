@@ -171,9 +171,8 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 " Don't expand tabs for Go
 autocmd BufRead,BufNewFile *.go setlocal tabstop=4
 
-" Include golint and run on :w
+" Include golint
 set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
-autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 
 " Use go-pls
 let g:go_def_mode='gopls'
