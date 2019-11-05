@@ -173,7 +173,7 @@ autocmd BufRead,BufNewFile *.go setlocal tabstop=4
 
 " Include golint and run on :w
 set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
-autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow<Paste>
+autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 
 " Use go-pls
 let g:go_def_mode='gopls'
