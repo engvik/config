@@ -50,9 +50,6 @@ colorscheme onedark
 set number relativenumber
 set nu rnu
 
-" Automatically read files when they are saved from the outside.
-set autoread
-
 " Display cursor line
 set cursorline
 
@@ -149,7 +146,11 @@ au TabLeave * let g:lasttab = tabpagenr()
 nnoremap cc :let @/ = ""<cr>
 
 " \e to open a NerdTree at in the directory of the currently viewed file
-nnoremap <Leader>e :Ex<CR>
+nnoremap <Leader>e :NERDTree<CR>
+
+" Open NerdTree if no files specified to vim
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " sudo write
 cmap w!! w !sudo tee % >/dev/null
