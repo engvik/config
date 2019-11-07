@@ -88,6 +88,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Aliases live in it's own file
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+[ -f ~/.bash_aliases ] && source ~/.bash_aliases
+
+# Prompt live in it's own file
+[ -f ~/.bash_prompt ] && source ~/.bash_prompt
