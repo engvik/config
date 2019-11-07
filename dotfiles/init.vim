@@ -50,9 +50,6 @@ colorscheme onedark
 set number relativenumber
 set nu rnu
 
-" Automatically read files when they are saved from the outside.
-set autoread
-
 " Display cursor line
 set cursorline
 
