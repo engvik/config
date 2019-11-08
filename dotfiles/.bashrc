@@ -20,9 +20,6 @@ shopt -s cmdhist
 # update the values of LINES and COLUMNS if necessary
 shopt -s checkwinsize
 
-# Stop the PC speaker
-setterm -bfreq 0
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
