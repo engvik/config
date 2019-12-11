@@ -195,6 +195,10 @@ let g:go_info_mode='gopls'
 " gofmt on save
 let g:go_fmt_command = "goimports"
 
+" Go lint on save
+let g:go_metalinter_command='golangci-lint'
+let g:go_metalinter_autosave = 1
+
 " Run async
 let g:go_async_run = 1
 
@@ -207,6 +211,7 @@ let g:go_autodetect_gopath = 1
 " Show errors
 let g:go_fmt_fail_silently = 0
 let g:go_jump_to_error = 0
+
 
 " Python highlight
 let python_highlight_all = 1
