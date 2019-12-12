@@ -173,7 +173,7 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 autocmd BufRead,BufNewFile *.go setlocal tabstop=4
 
 " Include golint
-set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
+" set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
 
 " Use go-pls
 let g:go_def_mode='gopls'
@@ -194,10 +194,6 @@ let g:go_info_mode='gopls'
 
 " gofmt on save
 let g:go_fmt_command = "goimports"
-
-" Go lint on save
-let g:go_metalinter_command='golangci-lint'
-let g:go_metalinter_autosave = 1
 
 " Run async
 let g:go_async_run = 1
