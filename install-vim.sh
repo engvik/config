@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Get neovim
-
+# Make sure neovim is installed
 if ! [ -x "$(command -v nvim)" ]; then
     curl -L -o nvim.tar.gz https://github.com/neovim/neovim/releases/download/nightly/nvim-linux64.tar.gz
     tar zxf nvim.tar.gz
@@ -10,6 +9,13 @@ if ! [ -x "$(command -v nvim)" ]; then
     rm -rf nvim-linux64/
     rm nvim.tar.gz
 fi
+
+# Make sure python3 and pip is installed
+if ! [ -x "$(command -v pyhton3)" ]; then
+    sudo apt install python3 python3-pip
+fi
+
+pip install --upgrade neovim
 
 # Install vim-plug
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
@@ -27,4 +33,4 @@ cd ~/.local/share/nvim/plugged/tern_for_vim
 npm install
 cd $CUR_PWD
 
-npm i -g neovim
+npm i -g neovi
