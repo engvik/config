@@ -16,6 +16,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'davidhalter/jedi-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-obsession'
 Plug 'rking/ag.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -181,7 +182,7 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_format_strings = 1
-let g:go_auto_sameids = 1
+"let g:go_auto_sameids = 1
 let g:go_highlight_debug = 1
 
 " Enable automatic type info
