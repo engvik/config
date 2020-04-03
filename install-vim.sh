@@ -15,7 +15,7 @@ if ! [ -x "$(command -v pyhton3)" ]; then
     sudo apt install python3 python3-pip
 fi
 
-pip install --upgrade neovim
+pip3 install --upgrade neovim
 
 # Install vim-plug
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
