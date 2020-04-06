@@ -53,3 +53,10 @@ curl -L -o gcsdk.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloa
 tar zxf gcsdk.tar.gz -C $HOME
 sh $HOME/google-cloud-sdk/install.sh --usage-reporting=false --command-completion=true --rc-path=/home/lars/.bashrc --path-update=true
 rm gcsdk.tar.gz
+
+# terraform
+curl -L -o terraform.zip https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
+checksum terraform.zip 602d2529aafdaa0f605c06adb7c72cfb585d8aa19b3f4d8d189b42589e27bf11
+unzip terraform.zip
+installBinary terraform
+rm terraform.zip
