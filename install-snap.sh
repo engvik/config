@@ -1,4 +1,5 @@
 #!/bin/bash
 
-sudo snap install jq slack spotify spotify
+sudo snap install jq slack spotify
+sudo snap install code --classic
 
