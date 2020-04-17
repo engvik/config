@@ -11,4 +11,5 @@ cp dotfiles/.bash_prompt ~/
 
 # git
 cp dotfiles/.gitconfig ~/
+cp dotfiles/.gitignore ~/
 
