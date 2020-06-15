@@ -60,3 +60,11 @@ checksum terraform.zip 607bc802b1c6c2a5e62cc48640f38aaa64bef1501b46f0ae4829feb51
 unzip terraform.zip
 installBinary terraform
 rm terraform.zip
+
+# wtfutil
+curl -L -o wtf.tar.gz https://github.com/wtfutil/wtf/releases/download/v0.30.0/wtf_0.30.0_linux_amd64.tar.gz
+checksum wtf.tar.gz eae3bf57ed574dc3c5cdee888b18d1c870dbaa43ca751e1ec6a7b89d65a9b7dd
+tar zxf wtf.tar.gz
+mv wtf_0.30.0_linux_amd64/wtfutil .
+installBinary wtfutil
+rm -rf wtf.tar.gz wtfutil wtf_0.30.0_linux_amd64/
