@@ -28,6 +28,7 @@ Plug 'Townk/vim-autoclose'
 Plug 'fgsch/vim-varnish'
 Plug 'rust-lang/rust.vim'
 Plug 'hashivim/vim-terraform'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
