@@ -89,3 +89,6 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 
 # Prompt live in it's own file
 [ -f ~/.bash_prompt ] && source ~/.bash_prompt
+
+# Source rust env
+source $HOME/.cargo/env
