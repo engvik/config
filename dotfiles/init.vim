@@ -208,6 +208,9 @@ let g:go_fmt_fail_silently = 0
 let g:go_jump_to_error = 0
 
 
+" rustfmt on save
+let g:rustfmt_autosave = 1
+
 " Python highlight
 let python_highlight_all = 1
 
