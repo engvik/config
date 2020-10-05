@@ -49,7 +49,7 @@ installBinary slackcat
 echo "slackcat is not configured, use slackat --configure to set up"
 
 # google-cloud-sdk
-curl -L -o gcsdk.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-253.0.0-linux-x86_64.tar.gz
+curl -L -o gcsdk.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-310.0.0-linux-x86_64.tar.gz
 tar zxf gcsdk.tar.gz -C $HOME
 sh $HOME/google-cloud-sdk/install.sh --usage-reporting=false --command-completion=true --rc-path=/home/lars/.bashrc --path-update=true
 rm gcsdk.tar.gz
