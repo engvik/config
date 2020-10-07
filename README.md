@@ -40,3 +40,6 @@ Installs everything vscode-related.
 
 Copies dotfiles only.
 
+## install-git.sh
+
+Install by cloning git repos.

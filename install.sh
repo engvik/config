@@ -18,6 +18,9 @@
 # Install by curl + sh
 ./install-sh.sh
 
+# Install by git
+./install-git.sh
+
 # Install vim
 ./install-vim.sh
 
