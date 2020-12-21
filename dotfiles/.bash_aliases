@@ -27,6 +27,9 @@ alias pythonserver='python -m SimpleHTTPServer 8000'
 alias supdt='sudo apt update'
 alias supgr='sudo apt upgrade'
 
+# Terraform
+alias tf='terraform'
+
 # enable color supported aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
