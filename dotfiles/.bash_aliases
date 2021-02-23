@@ -30,6 +30,9 @@ alias supgr='sudo apt upgrade'
 # Terraform
 alias tf='terraform'
 
+# Go
+alias go='go1.16'
+
 # enable color supported aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
